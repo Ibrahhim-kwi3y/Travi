@@ -1,0 +1,694 @@
+<htm lang="en">
+
+    <head>
+        <title>Travi</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/all.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <main id="carousel-slider" class="carousel slide" data-bs-ride="carousel">
+            <div class="main-nav">
+                <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                    <div class="container-fluid">
+                        <a href="index.html" class="navbar-brand logo"><img src="img/logo.svg" alt="travi"></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navcontent" aria-controls="navcontent" aria-expanded="false"
+                            aria-label="Toggle navigation">
+
+                            <svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="80"
+                                onclick="this.classList.toggle('active')">
+                                <path class="line top"
+                                    d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+                                <path class="line middle" d="m 30,50 h 40" />
+                                <path class="line bottom"
+                                    d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+                            </svg>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navcontent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ps-5">
+                                <li class="nav-item">
+                                    <a href="#carousel-slider" class="nav-link">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#gallery" class="nav-link">Gallery</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Plans</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#plans" class="dropdown-item">Entertainment</a></li>
+                                        <li><a href="#plans" class="dropdown-item">Work</a></li>
+                                        <li>
+                                            <hr class="dropdown-devider">
+                                        </li>
+                                        <li><a href="#plans" class="dropdown-item">Scholarships</a></li>
+                                        <li><a href="#plans" class="dropdown-item">Exploratory</a></li>
+                                        <li><a href="#plans" class="dropdown-item">Religious</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#blog" class="nav-link">Blog</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#about" class="nav-link">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#contact" class="nav-link">Contact</a>
+                                </li>
+                            </ul>
+                            <div class="search-field" href="#">
+                                <form action="#" class="d-flex mt-3">
+                                    <input type="search" id="search" class="form-control-sm me-2"
+                                        placeholder="Search Your Destination">
+                                    <button class="btn" type="button" href="#search"><i
+                                            class="fas fa-search"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="carousel-indicators">
+                <button class="active" type="button" data-bs-slide-to="0" data-bs-target="#carousel-slider"></button>
+                <button type="button" data-bs-slide-to="1" data-bs-target="#carousel-slider"></button>
+                <button type="button" data-bs-slide-to="2" data-bs-target="#carousel-slider"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="img/slider1.jpg" alt="slider1" class="d-block w-100  img-fluid"
+                        style="width: 100%; height: 100%;">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Lorem ipsum dolor sit amet</h5>
+                        <p>consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="img/slider2.jpg" alt="slider2" class="d-block w-100 img-fluid"
+                        style="width: 100%; height: 100%;">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Lorem ipsum dolor sit amet</h5>
+                        <p>consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="img/slider3.jpg" alt="slider3" class="d-block w-100 img-fluid"
+                        style="width: 100%; height: 100%;">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Lorem ipsum dolor sit amet</h5>
+                        <p>consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-slider" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel-slider" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </main>
+        <section id="about" class="mb-5">
+            <div class="overlay">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="about-cont col-lg-6 ">
+                            <h2>Let's Know About Travi</h2>
+                            <p>Sed nam ut dolor qui repellendus iusto odit. Possimus inventore eveniet accusamus error
+                                amet eius aut accusantium et.
+                                Non odit consequatur repudiandae sequi ea odio molestiae. Enim possimus sunt inventore
+                                in est ut optio sequi unde.</p>
+                        </div>
+                        <div class="address col-lg-3 ">
+                            <h2>Where</h2>
+                            <p>Downtown Conference Center, New York</p>
+                        </div>
+                        <div class="work-hours col-lg-3 ">
+                            <h2>When</h2>
+                            <p>Developed ,since 2013.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="top-dest">
+            <div class="container py-5">
+                <div class="title  text-center py-5">
+                    <h2>Top destinations</h2>
+                    <p>Take a look at offers</p>
+                    <strong>Destinations</strong>
+                </div>
+                <div class="row text-center">
+                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                        <div class="dest shadw">
+                            <img src="img/dest1.jpg" alt="destinaion1" class="img-fluid" style="max-width: 100%;">
+                            <div class="dest-cap">
+                                <p>From <span> &#36;560</span></p>
+                                <p>Moskva, Russia</p>
+                                <ul>
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                        <div class="dest shadw">
+                            <img src="img/dest2.jpg" alt="destinaion2" style="max-width: 100%;">
+                            <div class="dest-cap">
+                                <p>From <span> &#36;600</span></p>
+                                <p>Paris, France</p>
+                                <ul>
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                        <div class="dest shadw">
+                            <img src="img/dest3.jpg" alt="destinaion3" style="max-width: 100%;">
+                            <div class="dest-cap">
+                                <p>From <span> &#36;430</span></p>
+                                <p>Dubai, UAE</p>
+                                <ul>
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                        <div class="dest shadw">
+                            <img src="img/dest4.jpg" alt="destinaion4" style="max-width: 100%;">
+                            <div class="dest-cap">
+                                <p>From <span> &#36;350</span></p>
+                                <p>Roma, Italy</p>
+                                <ul>
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="plans">
+            <div class="container">
+                <div class="title text-center py-5">
+                    <h2>Tours Plans</h2>
+                    <p>Check your plan</p>
+                    <strong>Plans</strong>
+                </div>
+                <div class="row mb-5">
+                    <div class="col-lg-8 col-12">
+                        <div class="card plan-details shadw px-3">
+                            <h2 class="py-3 ps-4">London City</h2>
+                            <ul class="ps-4 m-0">
+                                <li><i class="fas fa-walking"></i><span>Tower Bridge,</span> This hundred year old
+                                    marvel draws everyone along.</li>
+                                <li><i class="fas fa-walking"></i><span>London Eye,</span> Awesome views of London in an
+                                    air conditioned pod.</li>
+                                <li><i class="fas fa-walking"></i><span>The British Museum</span> is a special place in
+                                    the world, to explore history and culture.</li>
+                                <li><i class="fas fa-walking"></i><span>Borough Market, </span> Occupying a tradition
+                                    covered market hall.</li>
+                                <li><i class="fas fa-walking"></i><span>Hyde Park,</span> As one of eight Royal Parks in
+                                    London, this playground of Henry the VIII.</li>
+                            </ul>
+                            <a href="#" class="more ps-4 pb-4">Read more<i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-12">
+                        <div class="card plan-img shadw">
+                            <img src="img/plan1.jpg" alt="plan1" class="rounded-1">
+
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d317715.71193692513!2d-0.38178583985784054!3d51.528735196048615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C%20UK!5e0!3m2!1sen!2seg!4v1678972508961!5m2!1sen!2seg"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-5">
+                    <div class="col-lg-8 col-12">
+                        <div class="card plan-details shadw px-3">
+                            <h2 class="py-3 ps-4">Sydne City</h2>
+                            <ul class="ps-4 m-0">
+                                <li><i class="fas fa-walking"></i><span>Sydney Opera House</span> offers an excellent
+                                    hour long guided tour.</li>
+                                <li><i class="fas fa-walking"></i><span>Manly Beach</span> Cnnected to the Circular Quay
+                                    by the Manly ferry service.</li>
+                                <li><i class="fas fa-walking"></i><span>Art Gallery of New South Wales,</span> view the
+                                    Archibald Prize portraits exhibition.</li>
+                                <li><i class="fas fa-walking"></i><span>WILD LIFE Sydney Zoo,</span> Discover the best
+                                    of Australia at Wild Life Sydney Zoo.</li>
+                                <li><i class="fas fa-walking"></i><span>Sea Life Sydney Aquarium,</span> two large pools
+                                    that one visits through underwater glassed corridors and additional smaller
+                                    expositions of beautiful varied species.</li>
+                            </ul>
+                            <a href="#" class="more ps-4 pb-4">Read more<i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-12">
+                        <div class="card plan-img shadw">
+                            <img src="img/plan3.jpg" alt="plan1" class="rounded-1">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d848341.7854631215!2d149.84851547236934!3d-33.842363000590005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b129838f39a743f%3A0x3017d681632a850!2sSydney%20NSW%2C%20Australia!5e0!3m2!1sen!2seg!4v1678973512927!5m2!1sen!2seg"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-5">
+                    <div class="col-lg-8 col-12">
+                        <div class="card plan-details shadw px-3">
+                            <h2 class="py-3 ps-4">New York City</h2>
+                            <ul class="ps-4 m-0">
+                                <li><i class="fas fa-walking"></i><span>Statue of Liberty</span> is a universal symbol
+                                    of freedom and democracy.</li>
+                                <li><i class="fas fa-walking"></i><span>The Brooklyn Bridge</span> is one of the oldest
+                                    road bridges in the country.</li>
+                                <li><i class="fas fa-walking"></i><span>The Metropolitan Museum,</span> to discover
+                                    endless pieces of art covering over years.</li>
+                                <li><i class="fas fa-walking"></i><span>Central Park,</span> America's first public
+                                    landscaped park, covering 843 acres of land.</li>
+                                <li><i class="fas fa-walking"></i><span>The Top of the Rock,</span> uniquely positioned
+                                    to see all of the most tall skyscrapers in the New York.</li>
+                            </ul>
+                            <a href="#" class="more ps-4 pb-4">Read more<i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-12">
+                        <div class="card plan-img shadw">
+                            <img src="img/plan2.jpg" alt="plan1" class="rounded-1">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387190.2799160891!2d-74.25987584510595!3d40.69767006338158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2seg!4v1678973561589!5m2!1sen!2seg"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="gallery">
+            <div class="container-fluid">
+                <div class="title text-center py-5">
+                    <h2>Popular destinations in 2023</h2>
+                    <p>Take a look at offers</p>
+                    <strong>Gallery</strong>
+                </div>
+                <div class="row py-4">
+                    <div class="col-lg-3 col-md-6 p-0">
+                        <div class="img-cont">
+                            <img src="img/gal-1.jpg" alt="gal1" class="img-fluid">
+                            <div class="offer-cont">
+                                <p>From <span>&#36;483</span></p>
+                                <h4>Egypt,Cairo</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 p-0">
+                        <div class="img-cont">
+                            <img src="img/gal-2.jpg" alt="gal1" class="img-fluid">
+                            <div class="offer-cont">
+                                <p>From <span>&#36;350</span></p>
+                                <h4>Japan,Tokyo</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 p-0">
+                        <div class="img-cont">
+                            <img src="img/gal-3.jpg" alt="gal1" class="img-fluid">
+                            <div class="offer-cont">
+                                <p>From <span>&#36;600</span></p>
+                                <h4>The Moldives</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 p-0">
+                        <div class="img-cont">
+                            <img src="img/gal-4.jpg" alt="gal1" class="img-fluid">
+                            <div class="offer-cont">
+                                <p>From <span>&#36;320</span></p>
+                                <h4>Turkey,Istanbul</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 p-0">
+                        <div class="img-cont">
+                            <img src="img/gal-5.jpg" alt="gal1" class="img-fluid">
+                            <div class="offer-cont">
+                                <p>From <span>&#36;470</span></p>
+                                <h4>Italy,Roma</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 p-0">
+                        <div class="img-cont">
+                            <img src="img/gal-6.jpg" alt="gal1" class="img-fluid">
+                            <div class="offer-cont">
+                                <p>From <span>&#36;540</span></p>
+                                <h4>Switzerland,Bern</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 p-0">
+                        <div class="img-cont">
+                            <img src="img/gal-7.jpg" alt="gal1" class="img-fluid">
+                            <div class="offer-cont">
+                                <p>From <span>&#36;580</span></p>
+                                <h4>Brazil,Brasilia</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 p-0">
+                        <div class="img-cont">
+                            <img src="img/gal-8.jpg" alt="gal1" class="img-fluid">
+                            <div class="offer-cont">
+                                <p>From <span>&#36;460</span></p>
+                                <h4>Greece,Athens </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="blog" class="blog">
+            <div class="container py-5">
+                <div class="title text-center py-5">
+                    <h2>Our Blog</h2>
+                    <p>Check last updates</p>
+                    <strong>Blog</strong>
+                </div>
+                <div class="row py-4">
+                    <div class="col-lg-4 px-3">
+                        <div class="blog-img shadw">
+                            <img src="img/blog-1.jpg" alt="blog1" class="img-fluid" style="max-width: 100%;">
+                        </div>
+                        <div class="blog-cont">
+                            <h3 class="py-2">Nature & Wildlife Tours in South Africa</h3>
+                            <p>March 1, 2023 <span>by</span> <a href="#">Admin</a></p>
+                            <div class="blog-parag">
+                                <p>Go wild in the Western Cape on an overnight safari trip from Cape Town!
+                                    Travel off the beaten track to interact with wildlife and immerse yourself in the
+                                    African bush.
+                                    The Garden Route and Klein Karoo offer the perfect backdrop for a wildlife
+                                    encounter.
+                                </p>
+                                <a href="#">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4  px-3">
+                        <div class="blog-img shadw">
+                            <img src="img/blog-2.jpg" alt="blog1" class="img-fluid" style="max-width: 100%;">
+                        </div>
+                        <div class="blog-cont">
+                            <h3 class="py-2">Phi Phi Islands Adventure Day Trip</h3>
+                            <p>March 1, 2023 <span>by</span> <a href="#">Admin</a></p>
+                            <div class="blog-parag">
+                                <p>Make the most of limited time in Thailand on a speedboat tour of the Phi Phi islands
+                                    from Phuket.
+                                    Traveling by speedboat means you spend less time at sea and more time exploring the
+                                    white sands
+                                    and crystal waters of the islands, home to the bay made famous by "The Beach.</p>
+                                <a href="#">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4  px-3">
+                        <div class="blog-img shadw">
+                            <img src="img/blog-3.jpg" alt="blog1" class="img-fluid" style="max-width: 100%;">
+                        </div>
+                        <div class="blog-cont">
+                            <h3 class="py-2">Short Reindeer Sledding Tour from Tromso</h3>
+                            <p>March 1, 2023 <span>by</span> <a href="#">Admin</a></p>
+                            <div class="blog-parag">
+                                <p>Enjoy your half-day tour as you invited by Sámi people to partake in their
+                                    traditions.
+                                    This tour takes you to a reindeer camp outside of Tromso, where you meet the
+                                    animals,
+                                    feed them, and then embark on a sled ride. Afterward, you gather insider a lavvu
+                                    (traditional Sámi dwelling) </p>
+                                <a href="#">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="faq" class="mb-5">
+            <div class="container">
+                <div class="title text-center py-5">
+                    <h2>The most questions</h2>
+                    <p>find yours</p>
+                    <strong>FAQ</strong>
+                </div>
+                <div class="row justify-content-center pe-2 py-3">
+                    <div class="col-lg-9">
+                        <div class="accordion pb-5" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse-clk1" aria-expanded="true"
+                                        aria-controls="collapseOne">
+                                        Where are the best places to travel alone? <i
+                                            class="fas fa-minus-circle"></i></button>
+                                </h2>
+                                <div id="collapse-clk1" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Well, we certainly don't recommend Tahiti, where there's an all-but-constant
+                                        reminder at every juncture that you are alone, a sad friendless figure lurking
+                                        amid
+                                        the glowing honeymooners. There are a few places, though, where visiting solo is
+                                        a bonus,
+                                        not a burden: notably cruises, yoga retreats, and treks across Europe.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse-clk2" aria-expanded="true"
+                                        aria-controls="collapseOne">
+                                        Is India a good travel destination? <i class="fas fa-minus-circle"></i></button>
+                                </h2>
+                                <div id="collapse-clk2" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        One of the best in the world, with a vast variety of destinations clustered
+                                        together in a single country,
+                                        from the Miami-esque glitz of Mumbai to the Raj-era holdovers in Kolkata, the
+                                        parched landscapes
+                                        and Tuscany-like city states in Rajasthan or the quiet backwaters of Kerala.
+                                        Here’s some inspiration
+                                        for planning the perfect first-timer’s trip, or you can pore over the site for
+                                        our India-based sister magazine.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse-clk3" aria-expanded="true"
+                                        aria-controls="collapseOne">
+                                        What are the best airport hacks? <i class="fas fa-minus-circle"></i></button>
+                                </h2>
+                                <div id="collapse-clk3" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Download the GateGuru app before your next trip: It shows maps and amenities for
+                                        any terminal,
+                                        so you can better plan where to eat lunch or whether you can arrive early for a
+                                        quick manicure.
+                                        Don't forget that Zolt charger we mentioned earlier, so your phone doesn't die
+                                        before takeoff.
+                                        And, of course, sign up for Global Entry.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse-clk4" aria-expanded="true"
+                                        aria-controls="collapseOne">
+                                        What will the food be like on my trip? <i
+                                            class="fas fa-minus-circle"></i></button>
+                                </h2>
+                                <div id="collapse-clk4" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Food is one of the most exciting parts of travel. There may be some familiar
+                                        fare but often
+                                        you’ll be confronted with the new, interesting and downright weird of the
+                                        culinary world
+                                        but we like to think of it as an adventure for all the senses. In addition to
+                                        this, our flexible
+                                        itineraries often allow you to eat with the group or branch out on your own -
+                                        this means
+                                        you can eat to suit any budget or desire.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
+                                        data-bs-target="#collapse-clk5" aria-expanded="true"
+                                        aria-controls="collapseOne">
+                                        Will I need a sleeping bag/mat/tent? <i
+                                            class="fas fa-minus-circle"></i></button>
+                                </h2>
+                                <div id="collapse-clk5" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        On our Africa and USA trips we provide the tent and sleeping mats, but you will
+                                        need
+                                        to bring your own sleeping bag. In Australia tents, blankets, linen and towels
+                                        are provided
+                                        so there is no need for a sleeping bag. More information can be found in your
+                                        Essential Trip Information.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="container-fluid">
+                <div class="row justify-content-center text-center">
+                    <div class="col-md-7">
+                        <div class="contact-det py-5">
+                            <h2 class="pb-4">Join and Trip With Us</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Delectus ut, doloremque quo molestiae nesciunt officiis veniam, beatae dignissimos!</p>
+                            <ul class="text-center ps-0 py-2">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                            </ul>
+                            <button type="button" class="btn btn-outline-dark my-3" data-bs-toggle="modal"
+                                data-bs-target="#modal-login">Get In Touch</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer id="foot">
+            <div class="container pt-5">
+                <div class="row">
+                    <div class="col-lg-4 pb-sm-5 pb-lg-0">
+                        <div class="foot-about">
+                            <img src="img/logo.svg" alt="footer logo" class="pb-4" style="width: 150px;height: 70px;">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pulvinar sed mauris eget
+                                tincidunt.
+                                Sed lectus nulla, tempor vel eleifend quis, tempus rut rum metus. Pellentesque ultricies
+                                enim eu quam fermentum hendrerit.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="foot-links">
+                            <h4 class="pb-4">Quick Links</h4>
+                            <ul class="ps-0">
+                                <li><a href="">About Us</a></li>
+                                <li><a href="">Our Plans</a></li>
+                                <li><a href="">Terms of Service</a></li>
+                                <li><a href="">Privacy</a></li>
+                                <li><a href="">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 pt-sm-5 pt-lg-0">
+                        <div class="foot-tags">
+                            <h4 class="pb-4">Tags</h4>
+                            <ul class="d-flex flex-row flex-wrap align-items-start justify-content-start ps-0">
+                                <li><a href="#" class="btn  me-2 mb-2">travel</a></li>
+                                <li><a href="#" class="btn  me-2 mb-2">summer</a></li>
+                                <li><a href="#" class="btn  me-2 mb-2">vacation</a></li>
+                                <li><a href="#" class="btn  me-2 mb-2">park</a></li>
+                                <li><a href="#" class="btn  me-2 mb-2">trip</a></li>
+                                <li><a href="#" class="btn  me-2 mb-2">beach</a></li>
+                                <li><a href="#" class="btn  me-2 mb-2">offer</a></li>
+                                <li><a href="#" class="btn  me-2 mb-2">cruise</a></li>
+                                <li><a href="#" class="btn  me-2 mb-2">plan</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col text-center">
+                        <p class="py-3 text-center">Copyright&copy;2023 All rights reserved | This template is made with
+                            <i class="fas fa-heart px-2"></i>by <a href="index.html">Travi</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="modal fade" id="modal-login" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" style="display: none;" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-secondary" id="staticBackdropLabel">Login</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- form -->
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label text-secondary">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label text-secondary">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <div class="mb-3 form-check">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch"
+                                        id="flexSwitchCheckChecked" checked="">
+                                    <label class="form-check-label text-secondary"
+                                        for="flexSwitchCheckChecked">Remmember me</label>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn login">Login</button>
+                            <button type="submit" class="btn  regist">Login</button>
+                        </form>
+                        <!-- /form -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn  log-close " data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /modal -->
+        </div>
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+            crossorigin="anonymous"></script>
+    </body>
+
+    </html>
