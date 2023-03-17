@@ -1139,12 +1139,4 @@ input[type="search"]::-webkit-search-cancel-button {
         display: none;
     }
 
-    .dest .dest-cap {
-        width: 85%;
-    }
-
-    .dest img {
-        width: 85%;
-    }
-
-}
+  }
