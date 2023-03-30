@@ -1106,12 +1106,16 @@ input[type="search"]::-webkit-search-cancel-button {
         margin-bottom: 10px;
     }
     .contact-det ul li {
-    margin: 0 30px;
-}
+        margin: 0 30px;
+    }
 
     .title strong {
         font-size: 44px;
         font-weight: bolder;
+    }
+    .about-cont ,.address,.work-hours
+    {
+        padding: 10px 0;
     }
 }
 
@@ -1139,4 +1143,6 @@ input[type="search"]::-webkit-search-cancel-button {
         display: none;
     }
 
-  }
+ 
+
+}
